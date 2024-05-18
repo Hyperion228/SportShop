@@ -1,0 +1,29 @@
+﻿@page
+@model SportShop.Pages.AddProduct
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Добавление товара</title>
+</head>
+<body>
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <p><label>Название</label></p>
+        <p><input type="text" name="title" /></p>
+        <p><label>Описание</label></p>
+        <p><input type="text" name="description" /></p>
+        <p><label>Цена</label></p>
+        <p><input type="integer" name="price" /></p>
+        <p><label>Фото</label></p>
+        <p><input type="file" name="imageFile" /></p>
+        <input type="submit" value="Добавить" />
+    </form>
+</div>
+</body>
+</html>

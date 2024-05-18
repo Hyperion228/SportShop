@@ -1,0 +1,30 @@
+﻿@page
+@model SportShop.Pages.Register
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Регистрация</title>
+</head>
+<body>
+<div>
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <h1>@Model.Message</h1>
+            <p><label>Имя пользователя:</label> </p>
+            <p><input type="text" name="userName"/></p>
+            <p><label>Пароль:</label> </p>
+            <p><input type="password" name="password1"/></p>
+            <p><label>Пароль еще раз:</label> </p>
+            <p><input type="password" name="password2"/></p>
+            <p><input type="submit" value="Регистрация"/></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

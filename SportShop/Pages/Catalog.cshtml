@@ -1,0 +1,35 @@
+﻿@page
+@model SportShop.Pages.Catalog
+
+@{
+    ViewData["Title"] = "Catalog";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Каталог</title>
+</head>
+<body>
+<div>
+    <div class="body-card">
+        @foreach (var product in Model.Products)
+    {
+        <form method="post" enctype="multipart/form-data">
+            <div class="product-card">
+                <h5>@product.Title</h5>
+                <img src="~/images/@product.ImageUrl" width="200" height="200"/>
+                <h6>@product.Price руб</h6>
+                <input type="hidden" name="productId" value="@product.Id"/>
+                <input type="hidden" name="productName" value="@product.Title"/>
+                <input type="hidden" name="productQuantity" value="1"/>
+                <a href="#" class="button">В корзину</a>
+            </div>
+        </form>
+        
+    }
+    </div>
+</div>
+</body>
+</html>

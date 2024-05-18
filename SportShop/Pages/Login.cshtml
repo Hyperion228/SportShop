@@ -1,0 +1,26 @@
+﻿@page
+@model SportShop.Pages.Login
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Авторизация</title>
+</head>
+<body>
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <p><label>@Model.Message</label></p>
+        <p><label>Имя пользователя:</label></p>
+        <p><input type="text" name="userName" /></p>
+        <p><label>Пароль:</label></p>
+        <p><input type="password" name="password" /></p>
+        <p><input type="submit" value="Войти" /></p>
+    </form>
+</div>
+</body>
+</html>

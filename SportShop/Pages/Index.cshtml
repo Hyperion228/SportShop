@@ -1,0 +1,31 @@
+﻿@page
+@using Microsoft.EntityFrameworkCore
+@using SportShop.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Больше товаров в каталоге</h1>
+</div>
+<div class="body-card">
+    @for (int i = 0; i < 3; i++)
+    {
+        <div class="product-card">
+            <h5>@Model.Products[i].Title</h5>
+            <img src="~/images/@Model.Products[i].ImageUrl" width="200" height="200"/>
+            <h6>@Model.Products[i].Price руб</h6>
+            <a href="#" class="button">В корзину</a>
+        </div>
+    }
+    @*@foreach (var product in Model.Products)
+    {
+        <div class="product-card">
+            <h2>@product.Title</h2>
+            <img src="~/images/@product.ImageUrl" width="200" height="200"/>
+            <h4>@product.Price руб</h4>
+            counter = counter + 1;
+        </div>
+    }*@
+</div>
