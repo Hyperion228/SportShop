@@ -21,6 +21,29 @@ namespace SportShop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SportShop.Models.Basket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BasketItems");
+                });
+
             modelBuilder.Entity("SportShop.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -60,8 +83,11 @@ namespace SportShop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("IsAdmin")
-                        .HasColumnType("bit");
+                    b.Property<int>("IsAdmin")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IsAutorize")
+                        .HasColumnType("int");
 
                     b.Property<string>("Password")
                         .IsRequired()

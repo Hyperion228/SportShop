@@ -23,8 +23,9 @@
                 <h6>@product.Price руб</h6>
                 <input type="hidden" name="productId" value="@product.Id"/>
                 <input type="hidden" name="productName" value="@product.Title"/>
-                <input type="hidden" name="productQuantity" value="1"/>
-                <a href="#" class="button">В корзину</a>
+                <input type="hidden" name="price"  value="@product.Price"/>
+                <input type="submit" class="button" value="В корзину"/>
+                @*<a type="submit" href="#" class="button">В корзину</a>*@
             </div>
         </form>
         

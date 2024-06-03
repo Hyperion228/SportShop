@@ -21,7 +21,7 @@ public class Register : PageModel
             Message = "Пароли не совпадают";
             return Page();
         }
-
+        
         var user = new User
         {
             Username = userName,

@@ -13,10 +13,12 @@
     @for (int i = 0; i < 3; i++)
     {
         <div class="product-card">
-            <h5>@Model.Products[i].Title</h5>
-            <img src="~/images/@Model.Products[i].ImageUrl" width="200" height="200"/>
-            <h6>@Model.Products[i].Price руб</h6>
-            <a href="#" class="button">В корзину</a>
+            <form method="post" enctype="multipart/form-data">
+                <h5>@Model.Products[i].Title</h5>
+                <img src="~/images/@Model.Products[i].ImageUrl" width="200" height="200"/>
+                <h6>@Model.Products[i].Price руб</h6>
+                <input type="submit" class="button" value="В корзину"/>
+            </form>
         </div>
     }
     @*@foreach (var product in Model.Products)

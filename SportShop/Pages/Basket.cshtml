@@ -13,7 +13,13 @@
 </head>
 <body>
 <div>
-    
+    @foreach (var product in Model.BasketItems)
+    {
+        <div class="product-card">
+            <h5>@product.Title</h5>
+            <h6>@product.Price руб</h6>
+        </div>
+    }
 </div>
 </body>
 </html>

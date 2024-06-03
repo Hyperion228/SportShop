@@ -7,7 +7,7 @@ public class Basket : PageModel
 {
     public string Message { get; private set; } = "";
     ApplicationContext _context;
-    public List<Models.Basket> BasketItems { get;private set; } = new();
+    public List<Cart> BasketItems { get;private set; } = new();
     public Basket(ApplicationContext context)
     {
         _context = context;

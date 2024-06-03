@@ -4,8 +4,9 @@
     "\\.idea",
     "\\SportShop",
     "\\SportShop\\Pages",
-    "\\SportShop\\wwwroot"
+    "\\SportShop\\wwwroot",
+    "\\SportShop\\wwwroot\\css"
   ],
-  "SelectedNode": "\\SportShop.sln",
+  "SelectedNode": "\\SportShop\\wwwroot\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }

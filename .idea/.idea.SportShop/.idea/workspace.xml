@@ -9,7 +9,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6d2e8e-88e5-46f1-945e-a02b1c8bede2" name="Changes" comment="" />
+    <list default="true" id="4e6d2e8e-88e5-46f1-945e-a02b1c8bede2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SportShop/.idea/dataSources/29179da1-f3b7-4fde-9018-cb424cbbdaa4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SportShop/.idea/dataSources/29179da1-f3b7-4fde-9018-cb424cbbdaa4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SportShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SportShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Models/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Models/ApplicationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Models/Basket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Models/Basket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Basket.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Basket.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Basket.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Basket.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Catalog.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Catalog.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Catalog.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Catalog.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/Pages/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/Pages/Register.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/SportShop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/SportShop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/ref/SportShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/ref/SportShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/refint/SportShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/Debug/net8.0/refint/SportShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportShop/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SportShop/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +47,26 @@
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hyperion228&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Hyperion228/SportShop.git&quot;,
+    &quot;accountId&quot;: &quot;7b04d4fe-9427-4798-bfd9-c0fffe0427a0&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2gPGKkQPJFd5WWjq99q1jok9glT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,6 +75,7 @@
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.SportShop: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,6 +157,8 @@
       <workItem from="1715953494070" duration="605000" />
       <workItem from="1716023463338" duration="5339000" />
       <workItem from="1716039697385" duration="985000" />
+      <workItem from="1717318043839" duration="5701000" />
+      <workItem from="1717408614764" duration="199000" />
     </task>
     <servers />
   </component>
