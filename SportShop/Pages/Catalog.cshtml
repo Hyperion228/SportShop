@@ -13,23 +13,24 @@
 </head>
 <body>
 <div>
+    <h3 class="msg-mid">@Model.Message</h3>
     <div class="body-card">
         @foreach (var product in Model.Products)
-    {
-        <form method="post" enctype="multipart/form-data">
-            <div class="product-card">
-                <h5>@product.Title</h5>
-                <img src="~/images/@product.ImageUrl" width="200" height="200"/>
-                <h6>@product.Price руб</h6>
-                <input type="hidden" name="productId" value="@product.Id"/>
-                <input type="hidden" name="productName" value="@product.Title"/>
-                <input type="hidden" name="price"  value="@product.Price"/>
-                <input type="submit" class="button" value="В корзину"/>
-                @*<a type="submit" href="#" class="button">В корзину</a>*@
-            </div>
-        </form>
-        
-    }
+        {
+            <form method="post" enctype="multipart/form-data">
+                <div class="product-card">
+                    <h5>@product.Title</h5>
+                    <img src="~/images/@product.ImageUrl" width="200" height="200"/>
+                    <h6>@product.Price руб</h6>
+                    <input type="hidden" name="productId" value="@product.Id"/>
+                    <input type="hidden" name="productName" value="@product.Title"/>
+                    <input type="hidden" name="price" value="@product.Price"/>
+                    <input type="submit" class="button" value="В корзину"/>
+                    @*<a type="submit" href="#" class="button">В корзину</a>*@
+                </div>
+            </form>
+
+        }
     </div>
 </div>
 </body>

@@ -10,16 +10,88 @@
 <html>
 <head>
     <title>Корзина</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const updateTotalPrice = () => {
+                let totalPrice = 0;
+                document.querySelectorAll('.product-quantity').forEach((input) => {
+                    const quantity = parseInt(input.value);
+                    const price = parseFloat(input.dataset.price);
+                    totalPrice += quantity * price;
+                });
+                document.getElementById('total-price').innerText = totalPrice + ' руб';
+            };
+
+            const saveState = () => {
+                const state = [];
+                document.querySelectorAll('.product-card-basket').forEach((form) => {
+                    const id = form.querySelector('input[name="id"]').value;
+                    const quantity = form.querySelector('.product-quantity').value;
+                    state.push({ id, quantity });
+                });
+                localStorage.setItem('basketState', JSON.stringify(state));
+            };
+
+            const loadState = () => {
+                const state = JSON.parse(localStorage.getItem('basketState'));
+                if (state) {
+                    state.forEach(item => {
+                        const input = document.querySelector(`.product-card-basket input[name="id"][value="${item.id}"]`);
+                        if (input) {
+                            input.closest('form').querySelector('.product-quantity').value = item.quantity;
+                        }
+                    });
+                }
+            };
+
+            document.querySelectorAll('.quantity-button').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const input = button.closest('form').querySelector('.product-quantity');
+                    let quantity = parseInt(input.value);
+                    if (button.dataset.action === 'increment') {
+                        quantity++;
+                    } else if (button.dataset.action === 'decrement' && quantity > 1) {
+                        quantity--;
+                    }
+                    input.value = quantity;
+                    updateTotalPrice();
+                    saveState();
+                });
+            });
+
+            loadState();
+            updateTotalPrice();
+        });
+    </script>
 </head>
 <body>
-<div>
-    @foreach (var product in Model.BasketItems)
-    {
-        <div class="product-card">
-            <h5>@product.Title</h5>
-            <h6>@product.Price руб</h6>
+    <div>
+        @{
+            int allPrice = 0;
+            foreach (var item in Model.BasketItems)
+            {
+                allPrice += item.Price;
+            }
+        }
+        @foreach (var product in Model.BasketItems)
+        {
+            <form method="post" class="product-card-basket">
+                <div>
+                    <h5>@product.Title</h5>
+                    <h6>@product.Price руб</h6>
+                    <div>
+                        <button type="button" class="quantity-button" data-action="decrement">-</button>
+                        <input type="number" class="product-quantity" name="quantity" value="1" min="1" data-price="@product.Price" />
+                        <button type="button" class="quantity-button" data-action="increment">+</button>
+                    </div>
+                </div>
+                <input type="hidden" name="id" value="@product.Id" />
+                <input class="button" value="Удалить" type="submit" />
+            </form>
+        }
+        <div class="basket-price">
+            <h4>Цена корзины: <span id="total-price">@allPrice руб</span></h4>
         </div>
-    }
-</div>
+    </div>
 </body>
 </html>

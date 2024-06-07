@@ -14,6 +14,7 @@ public class IndexModel : PageModel
     {
         _context = db;
     }
+    
     public void OnGet()
     {
         Products = _context.Products.ToList();

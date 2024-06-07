@@ -36,6 +36,19 @@ body {
   padding: 10px;
   width: 220px;
   transition: transform .2s;
+  
+}
+.product-card-basket{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0px;
+  border: 1px solid #ccc;
+  padding: 0px;
+  width: 220px;
+  max-width: 220px;
+  transition: transform .2s;
 }
 .product-card:hover{
   transform: scale(105%);
@@ -44,7 +57,7 @@ body {
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
-  color: #fff;
+  color: darkred;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: .15rem;
@@ -89,3 +102,43 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+.msg-mid{
+  position: absolute;
+  margin-left: 25%;
+  margin-top: -25px;
+}
+.basket-price{
+  margin-left: 30%;
+  margin-top: -350px;
+  color: green;
+}
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.product-quantity {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.product-card-basket {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .product-card-basket div {
+        margin-right: 15px;
+    }

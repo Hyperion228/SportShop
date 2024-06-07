@@ -16,7 +16,7 @@ public class Catalog : PageModel
         _context = context;
     }
 
-    public IActionResult OnPost(int productId,string productName, int price)
+    public void OnPost(int productId,string productName, int price)
     {
         var basket = new Cart
         {
@@ -24,14 +24,22 @@ public class Catalog : PageModel
             Title = productName,
             Price = price
         };
-        // var cart = _context.BasketItems.FirstOrDefault(b => b.ProductId == productId && b.Title == productName && b.Price == price);
+        foreach (var item in _context.BasketItems)
+        {
+            if (productId == item.ProductId)
+            {
+                Message = "Такой товар уже есть в корзине";
+                return;
+            }
+        }
         _context.BasketItems.Add(basket);
         _context.SaveChanges();
         Message = "Товар добавлен в корзину";
-        return Page();
+        //return Page();
     }
     public void OnGet()
     {
+        Message = "Выберите товар";
         Products = _context.Products.ToList();
     }
 }
